@@ -76,7 +76,6 @@ class Comment(db.Model):
 # db.create_all()
 
 
-
 def admin_only(function):
     """Make this page only accessible by the admin."""
 
