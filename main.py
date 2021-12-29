@@ -73,7 +73,8 @@ class Comment(db.Model):
         nullable=False)
 
 
-db.create_all()
+# db.create_all()
+
 
 
 def admin_only(function):
