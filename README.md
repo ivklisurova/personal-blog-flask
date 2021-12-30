@@ -9,7 +9,7 @@
 * [Contact](#contact)
 
 ### General info
-Personal blog that provides to admin to add, edit, delete posts. The users can create accounts and to comment posts. 
+Personal blog that provides admin opportunity to add, edit, delete posts. The users can create accounts and comment posts. 
 
 ### Technologies
 - Flask
