@@ -1,7 +1,7 @@
 # Flask - Personal Blog
 ### Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
+* [Built With](#build-with)
 * [Setup](#setup)
 * [Features](#features)
 * [Project status](#project-status)
@@ -11,7 +11,7 @@
 ### General info
 Personal blog that provides admin opportunity to add, edit, delete posts. The users can create accounts and comment posts. 
 
-### Technologies
+### Built With
 - Flask
 - SQLAlchemy
 - Bootstrap 
