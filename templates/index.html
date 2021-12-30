@@ -33,8 +33,8 @@
                     <p class="post-meta">Posted by
                         <a href="{{ url_for('about') }}">{{ post.author }}</a>
                         on {{ post.date }}
-                        {% if user_id == 1 %}
-                            <a href="{{ url_for('delete_post', post_id=post.id) }}">✘</a>
+                        {% if user_id == '1' %}
+                            <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete post✘</a>
                         {% endif %}
                     </p>
                 </div>
