@@ -1,4 +1,4 @@
-from flask import render_template, redirect, url_for, flash
+from flask import render_template, redirect, url_for, flash, request
 from datetime import date
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,6 +7,7 @@ from decorators import admin_only
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from models import BlogPost, User, Comment
 from settings import app, login_manager, db
+from emailhandler import send_email
 
 
 @app.route('/')
@@ -106,8 +107,15 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=['GET', 'POST'])
 def contact():
+    if request.method=='POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('phone')
+        message = request.form.get('message')
+        msg = f'Name:{name}\nEmail:{email}\nPhone:{phone}\n\n{message}'
+        send_email(msg)
     return render_template("contact.html")
 
 
@@ -150,7 +158,7 @@ def edit_post(post_id):
         db.session.commit()
         return redirect(url_for("show_post", post_id=post.id))
 
-    return render_template("make-post.html", form=edit_form, is_edit= True)
+    return render_template("make-post.html", form=edit_form, is_edit=True)
 
 
 @app.route("/delete/<int:post_id>")
