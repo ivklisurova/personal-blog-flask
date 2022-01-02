@@ -18,15 +18,12 @@ Personal blog that provides admin opportunity to add, edit, delete posts. The us
 - requirements.txt file available in the project
 
 ### Features
-[Features ready]
+
 - Landing page 
 - Login/Logout
 - Register page
 - About page
 - Contact page
-
-### Project status
-Project status: in progress. 
 
 ### License
 MIT - open project
