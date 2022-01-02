@@ -25,7 +25,7 @@ class BlogPost(db.Model):
     img_url = db.Column(db.String(250), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'),
         nullable=False)
-    comments = db.relationship('Comment', backref='blog_posts', lazy=True)
+    comments = db.relationship('Comment', backref='blog_posts', lazy=True, cascade="all, delete")
 
 
 class Comment(db.Model):
