@@ -2,11 +2,9 @@
 ### Table of contents
 * [General info](#general-info)
 * [Built With](#build-with)
-* [Setup](#setup)
 * [Features](#features)
-* [Project status](#project-status)
-* [License](#license)
-* [Contact](#contact)
+
+
 
 ### General info
 Personal blog that provides admin opportunity to add, edit, delete posts. The users can create accounts and comment posts. 
@@ -25,8 +23,3 @@ Personal blog that provides admin opportunity to add, edit, delete posts. The us
 - About page
 - Contact page
 
-### License
-MIT - open project
-
-### Contact
-ivanka_klisurova@yahoo.com
