@@ -7,7 +7,7 @@
 
 
 ### General info
-Personal blog that provides admin opportunity to add, edit, delete posts. The users can create accounts and comment posts. 
+Complete backend Flask app that supports users, authentication, posts, and a comment system.
 
 ### Built With
 - Flask
