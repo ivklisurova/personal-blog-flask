@@ -13,7 +13,7 @@ Complete backend Flask app that supports users, authentication, posts, and a com
 - Flask
 - SQLAlchemy
 - Bootstrap 
-- requirements.txt file available in the project
+
 
 ### Features
 
